@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+ }
+ body{
+    font-family: Arial, Helvetica, sans-serif;
+ }
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15%;
+    background-color: rgb(240, 192, 0);
+    
+}
+/*HEADER*/
+header h2{
+    background-color: rgb(87, 87, 236);
+    text-align: center;
+    color: white;
+    height: 1.5em;
+    padding: 0.4%;
+}
+header img{
+    width: 100%;
+}
+/*NAVBAR*/
+nav{
+    background-color: rgb(87, 87, 236);
+    line-height: 1.5;
+    width: 16%;
+    text-align: center;
+    padding: 1% 2%;
+}
+ul{
+    list-style-type: none;
+}
+nav a{
+    color: white;
+}
+/*ARTICLE*/
+.container-article{
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 1% 9% 1%;
+    align-items: flex-start;
+    background-color: white;
+}
+
+article{
+    width: 51%;
+    text-align: justify;
+    display: flex;
+    
+    flex-direction: column;
+}
+article h1{
+    color: rgb(237, 191, 7);
+    padding: 4% 0;
+}
+/*ASIDE*/
+aside{
+    width: 30%;
+    background-color: rgb(87, 87, 236);
+    color: white;
+}
+aside p{
+    text-align: justify;
+    padding: 7% 4%
+}
+aside h3{
+    text-align: center;
+}
+aside img{
+    text-align: center;
+    margin: 1em 4.4em;
+    border: 2px solid white;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside img{
+    width: 50%;
+}
+/*FOOTER*/
+
+footer{
+    background-color: rgb(87, 87, 236);
+    color: white;
+    height: 2em;
+    text-align: center;
+    padding: 0.7%;
+    font-size: large;
+}
+@media screen and (max-width: 700px) {
+    main{
+        flex-direction: column;
+    }
+
+    .container{
+        padding: 0;
+    }
+
+    /*nav*/
+    nav{
+        width: 100%;
+        line-height: 1.9;
+    }
+    /*ARTICLE*/
+    article{
+        width: 100%;
+    }
+    article h1{
+        text-align: center;
+    }
+    article p{
+        padding: 0 1%;
+    }
+    /*ASIDE*/
+    aside{
+      width: 100%;  
+    }
+    /*FOOTER*/
+    footer{
+        padding: 1.5%;
+    }
+    
+}
